@@ -1,4 +1,5 @@
 import React from "react";
+import { humidity, pressure, temperature, water } from "../../../assets";
 import "./HomePresenter.scss";
 
 export default function HomePresenter({ data, waterLevel, floodingProb }) {
@@ -24,41 +25,43 @@ export default function HomePresenter({ data, waterLevel, floodingProb }) {
           <div className="flex-between">
             <div>
               <p>
-                Temperature: 
-              </p> 
+                {" "}
+                <img src={temperature} alt="temp" />
+                Temperature:
+              </p>
               <span>{data.temperature} °C</span>
             </div>
-           
-           <div>
-            <p>
-              Humidity: 
-            </p>
-            <span>{data.humidity} %</span>
-           </div>
 
-           <div>
-            <p>
-              Pressure: 
-            </p>
-            <span>{data.pressure} hPa</span>
-           </div>
-            
+            <div>
+              <p>
+                {" "}
+                <img src={humidity} alt="humidtiy" />
+                Humidity:
+              </p>
+              <span>{data.humidity} %</span>
+            </div>
+
+            <div>
+              <p>
+                <img src={pressure} alt="pressure" />
+                Pressure:
+              </p>
+              <span>{data.pressure} hPa</span>
+            </div>
           </div>
-          
+
           <div className="level gap">
-            <p className="">
-              Water Level: 
+            <p>
+              <img src={water} alt="water" />
+              Water Level:
             </p>
             <span>{waterLevel}</span>
           </div>
-          
+
           <div className="risk gap">
-            <p >
-              Flooding risk: 
-            </p>
+            <p>Flooding risk:</p>
             <span>{renderProbabiltyText()}</span>
           </div>
-          
         </div>
       )}
     </div>
