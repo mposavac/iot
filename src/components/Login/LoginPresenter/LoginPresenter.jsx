@@ -23,7 +23,6 @@ export default function LoginPresenter({ values, handleFormChange, submit }) {
           onChange={handleFormChange}
         />
       </div>
-
       <button onClick={submit}>Login</button>
     </div>
   );
