@@ -3,8 +3,8 @@ import "./LoginPresenter.scss";
 
 export default function LoginPresenter({ values, handleFormChange, submit }) {
   return (
-    <div className="">
-      <div className="">
+    <div className="login">
+      <div className="login__mail">
         <label htmlFor="email">E-mail:</label>
         <input
           type="email"
@@ -14,8 +14,8 @@ export default function LoginPresenter({ values, handleFormChange, submit }) {
         />
       </div>
 
-      <div className="">
-        <label htmlFor="password">Password</label>
+      <div className="login__password">
+        <label htmlFor="password">Password:</label>
         <input
           type="password"
           name="password"

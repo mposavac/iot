@@ -18,25 +18,47 @@ export default function HomePresenter({ data, waterLevel, floodingProb }) {
   };
 
   return (
-    <div>
+    <div className="home">
       {data && (
-        <div>
-          <p>
-            Temperature: <span>{data.temperature} °C</span>
-          </p>
-          <p>
-            Humidity: <span>{data.humidity} %</span>
-          </p>
-          <p>
-            Pressure: <span>{data.pressure} hPa</span>
-          </p>
+        <div className="home-data">
+          <div className="flex-between">
+            <div>
+              <p>
+                Temperature: 
+              </p> 
+              <span>{data.temperature} °C</span>
+            </div>
+           
+           <div>
+            <p>
+              Humidity: 
+            </p>
+            <span>{data.humidity} %</span>
+           </div>
 
-          <p>
-            Water Level: <span>{waterLevel}</span>
-          </p>
-          <p>
-            Flooding risk: <span>{renderProbabiltyText()}</span>
-          </p>
+           <div>
+            <p>
+              Pressure: 
+            </p>
+            <span>{data.pressure} hPa</span>
+           </div>
+            
+          </div>
+          
+          <div className="level gap">
+            <p className="">
+              Water Level: 
+            </p>
+            <span>{waterLevel}</span>
+          </div>
+          
+          <div className="risk gap">
+            <p >
+              Flooding risk: 
+            </p>
+            <span>{renderProbabiltyText()}</span>
+          </div>
+          
         </div>
       )}
     </div>

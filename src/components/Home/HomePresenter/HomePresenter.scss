@@ -1,0 +1,75 @@
+$red            : #e56B60;
+$pink           : #b56576;
+$purple         : #6d597a;
+$blue           : #355070;
+$krem           : #ffe6c7;
+$text           : #343738;
+$text-lighter   : #545a5c;
+
+
+.home {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+
+    
+    //typo
+    font-size: 1.2rem;
+    color: $text-lighter;
+
+    span {
+        color: $text;
+        padding-left: 0.5rem;
+        font-size: 1.7rem;
+    }
+}
+
+.risk {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        color: $pink;
+        padding-top: 0rem;
+        margin-left: 1rem;
+    }
+
+    p {
+        margin-bottom: 0.7rem;
+    }
+}
+
+
+.level {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        padding-top: 0rem;
+        margin-left: 1rem;
+    }
+
+    p {
+        margin-bottom: 0.7rem;
+    }
+}
+
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+
+    p {
+        margin-bottom: 0.7rem;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.gap {
+    margin-top: 3rem;
+}

@@ -1,0 +1,34 @@
+$text           : #343738;
+$text-lighter   : #545a5c;
+$blue           : #355070;
+$purple         : #6d597a;
+
+.devices {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+
+    
+    //typo
+    font-size: 1.2rem;
+    color: $text-lighter;
+
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        padding-top: 0rem;
+        margin-left: 1rem;
+        
+        //typo
+        font-size: 1.7rem;
+        color: $text; 
+    }
+
+    p {
+        margin-bottom: 0.7rem;
+    }
+}

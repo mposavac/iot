@@ -4,20 +4,23 @@ import "./NavigationPresenter.scss";
 
 export default function NavigationPresenter({ handleLogout }) {
   return (
-    <div className="">
-      <div className="">
+    <div className="navigation">
+      
+      <div className="navigation__item">
         <NavLink to="/">
           <p>Home</p>
         </NavLink>
       </div>
-      <div className="">
+      <div className="navigation__item">
         <NavLink to="my-devices">
           <p>My Devices</p>
         </NavLink>
       </div>
-      <div className="">
+      <div className="logout">
         <p onClick={handleLogout}>Log out</p>
       </div>
+      
+      
     </div>
   );
 }

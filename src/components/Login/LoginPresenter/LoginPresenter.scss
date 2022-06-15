@@ -1,1 +1,48 @@
+$red            : #e56B60;
+$pink           : #b56576;
+$purple         : #6d597a;
+$blue           : #355070;
+$krem           : #ffe6c7;
+$text           : #343738;
+$text-lighter   : #545a5c;
 
+
+
+.login {
+    width: 22rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+
+    //typo
+    font-size: 1.1rem;
+    color: $text-lighter;
+
+    label {
+        width: 7rem;
+        display: block;
+    }
+
+
+    &__mail {
+        display: flex;
+        margin-top: 0.5rem;
+    }
+
+    &__password {
+        display: flex;
+        margin-top: 0.5rem;
+    }
+}   
+
+
+button {
+    background-color: #355070;
+    color: aliceblue;
+    padding: 0.6rem 2rem;
+    border-radius: 6px;
+    border: none;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    margin-left: auto;
+}

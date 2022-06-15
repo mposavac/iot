@@ -1,0 +1,44 @@
+$red            : #e56B60;
+$pink           : #b56576;
+$purple         : #6d597a;
+$blue           : #355070;
+$krem           : #ffe6c7;
+$text           : #343738;
+$text-lighter   : #545a5c;
+
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+
+    text-transform: uppercase;
+
+    background-color: $blue;
+    color: whitesmoke;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 1rem;
+    border-radius: 0.4rem;
+
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+
+
+        transition: color 2s;
+
+        :hover {
+            color: gainsboro;
+        }
+    }
+
+    .logout {
+        cursor: pointer;
+        margin-left: auto;
+        
+        
+        :hover {
+            color: $red;
+        }
+    }
+}
